@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-	helper StaticHelper
+  helper StaticHelper
   def home
   end
 
@@ -7,7 +7,7 @@ class StaticController < ApplicationController
   end
 
   def cats
-  	 @cats = CatAPI.new.get_images(results_per_page: params[:number_of_cats] || 1)
+     @cats = CatAPI.new.get_images(results_per_page: params[:number_of_cats] || 1)
   end
 
 end
